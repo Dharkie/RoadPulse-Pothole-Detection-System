@@ -1,0 +1,31 @@
+┌───────────────┐
+│ Vehicle Motion│
+└───────┬───────┘
+        │
+        ▼
+┌───────────────┐
+│ MPU6050 IMU   │
+└───────┬───────┘
+      I²C
+        │
+        ▼
+┌──────────────────────────┐
+│ STM32F407G-DISC1         │
+│ • Data Acquisition       │
+│ • Feature Extraction     │
+│ • Event Detection        │
+│ • Hazard Classification  │
+└───┬───────────────┬──────┘
+    │ UART          │ UART
+    ▼               ▼
+┌─────────┐    ┌─────────┐
+│ LC76G   │    │ ESP32   │
+│ GNSS    │    │ WiFi    │
+└────┬────┘    └────┬────┘
+     └──────┬───────┘
+            ▼
+      HTTP Event Packet
+            ▼
+      Cloud Backend
+            ▼
+      Hazard Map
