@@ -18,45 +18,7 @@ RoadPulse explores an automated method of detecting and locating road hazards us
 
 ## System Architecture
 
-Vehicle Motion
-
-↓
-
-MPU6050 IMU
-
-↓
-
-STM32 Firmware
-
-↓
-
-Feature Extraction
-
-↓
-
-Event Detection
-
-↓
-
-GNSS Positioning
-
-↓
-
-ESP32 WiFi Communication
-
-↓
-
-HTTP Data Transmission
-
-↓
-
-Road Hazard Database (Planned)
-
-↓
-
-Map Visualization (Planned)
-
----
+![RoadPulse Architecture](roadPulse_Architecture.png)
 
 ## Hardware
 
